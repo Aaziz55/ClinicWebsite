@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Al Barakah Medical Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-navy: #002d5e;
+            --text-dark: #2d3436;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-title {
+            color: var(--primary-navy);
+            border-bottom: 3px solid var(--primary-navy);
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* Hero/Promise Box */
+        .highlight-box {
+            background: var(--primary-navy);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,45,94,0.2);
+        }
+
+        .highlight-box h2 {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Doctors Grid */
+        #doctors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .doctor-card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .doctor-card:hover {
+            border-color: var(--primary-navy);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Medical Procedures Grid */
+        #Services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        #Services article {
+            background: #fdfdfd;
+            border-bottom: 4px solid #eee;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        #Services article:hover {
+            border-color: var(--primary-navy);
+            background: #fff;
+        }
+
+        #Services i {
+            font-size: 2rem;
+            color: var(--primary-navy);
+            margin-bottom: 10px;
+        }
+
+        #Services h4 {
+            color: var(--primary-navy);
+            margin-bottom: 8px;
+        }
+
+        /* Premium Facilities Cards (Salesman Style) */
+        .premium-card {
+            background: #ffffff;
+            border-left: 8px solid var(--primary-navy);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+        }
+
+        .premium-card h4 {
+            color: var(--primary-navy);
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .premium-card p {
+            line-height: 1.7;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        strong {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+    <li><a href="services.html" class="active"><i class="fa-solid fa-hand-holding-medical"></i> Services</a></li>
+    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+
+<div class="content-wrapper">
+    <section class="image-container">
+        <img src="Al Barakah Logo.jpeg" alt="Al Barakah Medical Center Logo">
+    </section>
+
+    <main>
+        <div class="highlight-box">
+            <h2>"We Treat Our Customers Like Kings"</h2>
+            <p style="color: #f1f1f1; font-size: 1.2rem;">Experience the highest standard of medical care in the city.</p>
+        </div>
+
+        <h3 class="section-title">Our Specialist Doctors</h3>
+        <section id="doctors">
+            <article class="doctor-card">
+                <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--primary-navy);"></i>
+                <h4>DR. ABDUL AZIZ ABDI FARAH</h4>
+                <p><strong>EYE SPECIALIST & SURGEON</strong></p>
+                <p>MBBS, MS, MD (OPHTHALMOLOGY)<br>20 years of medical experience.</p>
+            </article>
+
+            <article class="doctor-card">
+                <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--primary-navy);"></i>
+                <h4>DR. ALI ABDULLAHI ABDI</h4>
+                <p><strong>EYE SPECIALIST & SURGEON</strong></p>
+                <p>MBBS, MS, MD (OPHTHALMOLOGY)<br>Expert eye and surgery specialist.</p>
+            </article>
+
+            <article class="doctor-card">
+                <i class="fa-solid fa-user-doctor" style="font-size: 3rem; color: var(--primary-navy);"></i>
+                <h4>DR. MUHAMMAD ABDUL REHMAN</h4>
+                <p><strong>EYE SPECIALIST & OPHTHALMOLOGIST</strong></p>
+                <p>MBBS, MS, MD (OPHTHALMOLOGY)<br>Expert eye and surgery specialist.</p>
+            </article>
+
+            <article class="doctor-card">
+                <i class="fa-solid fa-user-nurse" style="font-size: 3rem; color: var(--primary-navy);"></i>
+                <h4>DR. KHADIJO YAHYA</h4>
+                <p><strong>OBSTETRICIAN & GYNAECOLOGIST</strong></p>
+                <p>MBBS, MD, MS (OB & GYN)<br>More than 10 years of medical experience.</p>
+            </article>
+        </section>
+
+        <h3 class="section-title">Specialized Medical Procedures</h3>
+        <section id="Services">
+            <article><i class="fa-solid fa-hospital-user"></i><h4>OPD</h4><p>General eye consultation and comprehensive follow-up.</p></article>
+            <article><i class="fa-solid fa-scalpel-path"></i><h4>Surgery</h4><p>Minor and major eye surgeries with modern theatre tech.</p></article>
+            <article><i class="fa-solid fa-microscope"></i><h4>OCT</h4><p>High-resolution imaging of retinal and eye layers.</p></article>
+            <article><i class="fa-solid fa-wave-square"></i><h4>B-Scan</h4><p>Advanced ultrasound for viewing the internal eye structure.</p></article>
+            <article><i class="fa-solid fa-vials"></i><h4>BCL</h4><p>Specialized Blood Culture Lab for accurate diagnosis.</p></article>
+            <article><i class="fa-solid fa-map"></i><h4>Topography</h4><p>Precise mapping of the surface curvature of the eye.</p></article>
+            <article><i class="fa-solid fa-eye"></i><h4>VFT</h4><p>Visual Field Testing for peripheral vision and glaucoma.</p></article>
+            <article><i class="fa-solid fa-glasses"></i><h4>Refraction</h4><p>Digital testing for 100% accurate eyeglass prescriptions.</p></article>
+            <article><i class="fa-solid fa-bolt"></i><h4>YAG Laser</h4><p>Painless laser treatment for post-cataract vision clarity.</p></article>
+        </section>
+
+        <h3 class="section-title">World-Class Facilities</h3>
+        <section class="extra-services">
+            <div class="premium-card">
+                <h4><i class="fa-solid fa-glasses"></i> Luxury Optics & Vision Center</h4>
+                <p>We boast the city's largest selection of high-quality eyewear. <strong>Customer First:</strong> If your product is damaged, we provide immediate <strong>refunds or exchanges</strong>. We treat you like royalty.</p>
+            </div>
+
+            <div class="premium-card">
+                <h4><i class="fa-solid fa-pills"></i> Professional Pharmacy</h4>
+                <p>100% genuine medicines and pharmaceutical products at fair prices. No compromises on your health—only temperature-controlled, certified stock.</p>
+            </div>
+
+            <div class="premium-card">
+                <h4><i class="fa-solid fa-vial-virus"></i> Advanced Diagnostic Lab</h4>
+                <p>The <strong>only facility in the city</strong> offering specialized <strong>Blood Culture tests</strong>. Fast, accurate, and detailed results every time.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="centered-footer" style="text-align: center; padding: 30px; color: #666; font-size: 0.9rem;">
+        &copy; 2025 Al Barakah Medical Center Ltd. All Rights Reserved.
+    </footer>
+</div>
+</body>
+</html>

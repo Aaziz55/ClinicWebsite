@@ -1,0 +1,425 @@
+/* HOME PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    display: flex; /* Aligns Nav and Content side-by-side */
+    min-height: 100vh;
+}
+/* Sidebar Navigation */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Content Area */
+.content-wrapper {
+    flex-grow: 1; /* Takes up remaining width */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    padding: 20px 0;
+}
+
+/* The Image Container */
+.image-container {
+    width: 100%;
+    height: 50vh; /* Adjust this to change how much screen the image covers */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents stretching while filling the area */
+    display: block;
+}
+
+/* Text below image */
+.hero-content {
+    padding: 40px 20px;
+}
+
+.hero-content h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #006400; /* Dark Green matching your logo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* CONTACT */
+
+  /* KILL DROPDOWN ARROWS (SPINNERS) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    appearance: textfield; /* Firefox Fix */
+}
+
+/* Sidebar & Layout */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; font-family: Arial, sans-serif; min-height: 100vh; }
+
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #ddd;
+}
+.sidebar ul { list-style: none; }
+.sidebar ul li { margin-bottom: 15px; }
+.sidebar ul li a { text-decoration: none; color: #333; font-weight: bold; }
+
+.content-wrapper {
+    margin-left: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the whole page content */
+}
+
+/* FULLY VISIBLE LOGO AREA */
+.logo-area {
+    width: 100%;
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+.logo-area img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Prevents cropping or text hitting the roof */
+}
+
+/* Centered Header & Main Content */
+.centered-header, .centered-main {
+    text-align: center;
+    width: 100%;
+    max-width: 750px; 
+    padding: 20px;
+}
+
+.intro-p { margin: 15px 0 30px 0; }
+.contact-info p { margin-bottom: 12px; }
+
+/* Form Fields */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Keep labels above boxes */
+}
+.input-group label { font-weight: bold; margin-bottom: 5px; }
+.input-group input, .input-group select, .input-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-row { display: flex; gap: 20px; }
+.form-row .input-group { flex: 1; }
+
+/* Spacing Fixes */
+.submit-btn {
+    margin-top: 30px; /* Double gap */
+    padding: 12px 60px;
+    background: #006400;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.centered-footer {
+    margin-top: 60px; /* Double gap */
+    padding-bottom: 30px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+#success-message {
+    display: none;
+    background-color: #eaffea;
+    border: 1px solid #006400;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+  
+/* SERVICES */
+
+
+:root {
+    --primary: #004a99;
+    --secondary: #00d4ff;
+    --accent: #28a745;
+    --text-dark: #2d3436;
+    --glass: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* --- Navigation --- */
+nav {
+    background: var(--primary);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav a.active { color: var(--secondary); border-bottom: 2px solid var(--secondary); }
+
+/* --- TITLE STYLING --- */
+.section-title {
+    text-align: center;
+    color: #002d5e;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 40px auto 20px auto;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* --- DOCTOR GRID --- */
+#doctors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* FORCES 1 ROW */
+    gap: 20px;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.doctor-card {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover { transform: translateY(-10px); }
+
+/* --- SERVICES GRID --- */
+#Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 2rem 10%;
+}
+
+#Services article {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#Services i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* --- EXTRA SERVICES --- */
+.extra-services {
+    background: linear-gradient(135deg, #004a99 0%, #002d5e 100%);
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.extra-services ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.extra-services li {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) { #doctors { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { #doctors { grid-template-columns: 1fr; } }
+
+
+/* ABOUT */
+
+/* --- About Page Layout --- */
+.about-container {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-box {
+    background: var(--glass);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 6px solid var(--primary);
+    max-width: 900px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 10%;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* --- Vision Section --- */
+.vision-section {
+    background: var(--primary);
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.vision-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+/* --- Locations (The 'Laamaha' Grid) --- */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+.location-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 4px solid var(--secondary);
+    transition: 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    background: #f8fbff;
+}
+
+.location-card i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.experience-footer {
+    text-align: center;
+    padding: 40px 10%;
+    font-style: italic;
+    color: #555;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .info-grid, .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}

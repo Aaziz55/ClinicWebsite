@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Al Barakah Medical Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="sidebar">
+    <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-hand-holding-medical"></i> Services</a></li>
+        <li><a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content-wrapper">
+    <div class="logo-area">
+        <img src="Al Barakah Logo.jpeg" alt="Al Barakah Medical Center Logo">
+    </div>
+
+    <header class="centered-header">
+        <h1>Contact Us</h1>
+        <p class="intro-p">Please fill out the form below to book your appointment.</p>
+    </header>
+
+    <main class="centered-main">
+        <form id="contact-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" name="phone" placeholder="e.g. 615000000" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Home Address</label>
+                    <input type="text" id="address" name="address" placeholder="Street, City" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="120" placeholder="Years" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">Sex</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="service">Interested Service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Choose a service</option>
+                    <option value="eye-checkup">Eye Checkup</option>
+                    <option value="surgery">Surgery</option>
+                    <option value="pharmacy">Pharmacy</option>
+                    <option value="lab">Lab Test</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Additional Notes</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="success-message" style="display:none; margin-top: 20px; color: #006400; font-weight: bold;">
+            <h3>Thank you!</h3>
+            <p>Your appointment request has been sent
